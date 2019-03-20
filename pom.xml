@@ -12,17 +12,38 @@
 	<artifactId>StackOverflowAdaptor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>StackOverflowAdaptor</name>
-	<description>Demo project for Spring Boot</description>
+    <description>Demo Project to get the data from stackoverflow</description>
+    <url>https://github.com/ShilpaRaniPat/StackOverflowAdaptor</url>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Shilpa Rani</name>
+            <email>shilparani.edu@gmail.com</email>
+            <organization>Sonatype</organization>
+            <organizationUrl>http://www.sonatype.com</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git:github.com/ShilpaRaniPat/StackOverflowAdaptor.git</connection>
+        <developerConnection>scm:git:ssh:github.com/ShilpaRaniPat/StackOverflowAdaptor.git</developerConnection>
+        <url>https://github.com/ShilpaRaniPat/StackOverflowAdaptor</url>
+    </scm>
 
-	<properties>
+
+    <properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -42,6 +63,7 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.6</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -88,31 +110,19 @@
 			<artifactId>gson</artifactId>
 
 		</dependency>
-
-
 	</dependencies>
 
 
+    <!--<build>-->
+    <!--<extensions>-->
+    <!--<extension>-->
+    <!--<groupId>io.packagecloud.maven.wagon</groupId>-->
+    <!--<artifactId>maven-packagecloud-wagon</artifactId>-->
+    <!--<version>0.0.6</version>-->
+    <!--</extension>-->
+    <!--</extensions>-->
+    <!--</build>-->
 
-	<build>
-		<extensions>
-			<extension>
-				<groupId>io.packagecloud.maven.wagon</groupId>
-				<artifactId>maven-packagecloud-wagon</artifactId>
-				<version>0.0.6</version>
-			</extension>
-		</extensions>
-	</build>
-	<distributionManagement>
-		<repository>
-			<id>packagecloud.release</id>
-			<url>packagecloud+https://packagecloud.io/eroteme/release</url>
-		</repository>
-		<snapshotRepository>
-			<id>packagecloud.snapshot</id>
-			<url>packagecloud+https://packagecloud.io/eroteme/snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<repositories>
 		<repository>
